@@ -1,0 +1,1 @@
+This project is purely for HTML and CSS. I played a bit using JS before I my JS classes, so dont be scared of the js code :)

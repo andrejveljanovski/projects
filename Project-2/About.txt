@@ -1,0 +1,1 @@
+This project is meant for mobile app, and it doesnt work for bigger screens properly. Also if you check this project make sure you run it with live server, otherwise it wont work properly :)

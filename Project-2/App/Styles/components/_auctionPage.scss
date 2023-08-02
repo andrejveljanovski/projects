@@ -1,0 +1,106 @@
+@use "../abstracts/variables" as var;
+
+#auction {
+  .auction-page {
+    background-color: var.$terciary-color;
+    height: 100vh;
+    padding: 1rem;
+    h1 {
+      text-align: center;
+      color: var.$secondary-color;
+    }
+    .auction-inner {
+      h2 {
+        text-align: center;
+        color: var.$secondary-color;
+        font-size: var.$font-size-bigger;
+      }
+      .card {
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        margin-bottom: 2rem;
+        padding-bottom: 0.1rem;
+        p {
+          margin-bottom: 0.5rem;
+        }
+        background-color: var.$primary-color;
+        p {
+          color: var.$secondary-color;
+          font-weight: 500;
+        }
+        .card-img {
+          height: 160px;
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+        .card-context {
+          .fs-med {
+            font-size: var.$font-size-medium;
+            margin-bottom: 0.5rem;
+          }
+          .context-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+              font-family: var.$font-family-second;
+              font-size: var.$font-size-big;
+              align-self: center;
+            } //ova se povtorva samo color e razlicno so mixin vo sredvanjeto
+          }
+
+          width: 100%;
+
+          padding: 0 1rem;
+        }
+      }
+    }
+    .auction-info {
+      text-align: center;
+      i {
+        margin-bottom: 1rem;
+        color: var.$secondary-color;
+      }
+      p {
+        font-size: var.$font-size-big;
+        color: var.$secondary-color;
+        text-align: center;
+        border: 1px solid var.$primary-color;
+        background-color: var.$primary-color;
+      }
+    }
+    .auction-bidding {
+      text-align: center;
+      label {
+        font-size: var.$font-size-big;
+        color: var.$secondary-color;
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #biddingInput {
+          background: transparent;
+          border: 2px solid var.$secondary-color;
+          height: 27px;
+          text-align: center;
+          width: 11rem;
+          font-size: var.$font-size-large;
+          color: rgb(125, 69, 69);
+        }
+        button {
+          width: 11rem;
+          height: 27px;
+          border: 2px solid var.$secondary-color;
+          background-color: var.$secondary-color;
+          color: var.$primary-color;
+        }
+      }
+      li {
+        list-style: none;
+        color: var.$secondary-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+/* */
+.main-bgc {
+  background-color: rgb(252, 210, 50);
+}
+
+.secondary-bgc {
+  background-color: rgb(255, 17, 0);
+}
+
+.terciary-bgc {
+  background-color: rgb(48, 47, 56);
+}
+.fourth-bgc {
+  background-color: #eb3b3b;
+}
+.hovBtn:hover {
+  background-color: #d3180b;
+}
+.navbar {
+  height: 10vh;
+}
+
+/* navbar*/
+.logo-size {
+  max-width: 2.6rem;
+}
+
+.buttonStyle {
+  font-size: 1rem;
+  min-width: 16%;
+}
+.bdStyle {
+  padding: 0;
+  border: 0px;
+}
+
+/* second page */
+.darker-ylw {
+  background-color: #f6cd30;
+}
+
+.h1-fs {
+  font-size: 3rem;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+.frm-h {
+  height: 83vh;
+}
+
+.footer {
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.expanded {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+.expanded2 {
+  position: absolute;
+  top: 5rem;
+  left: 1.5rem;
+}
+.section-1 {
+  min-height: 50vh;
+  background: url("../../img/sectionBgimg.jpg") fixed no-repeat center;
+  background-size: cover;
+}
+
+.prop-img-card {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+/* filter and cards */
+.c-hover {
+  box-shadow: -1px 1px 11px 3px rgba(128, 128, 128, 0.59);
+  -webkit-box-shadow: -1px 1px 11px 3px rgba(128, 128, 128, 0.59);
+  -moz-box-shadow: -1px 1px 11px 3px rgba(128, 128, 128, 0.59);
+}
+.c-hover:hover {
+  transform: scale(1.05);
+  transition: 0.4s ease-in-out;
+}
+#programmingCards,
+#marketingCards,
+#designCards {
+  display: none;
+}
+i {
+  font-size: 1.5rem;
+}
+.fntawsm {
+  display: none;
+}
+@media screen and (max-width: 766px) {
+  .cardsSection .cards {
+    display: none;
+  }
+}
+
+.cardsSection .cards:nth-child(1),
+.cardsSection .cards:nth-child(2),
+.cardsSection .cards:nth-child(3),
+.cardsSection .cards:nth-child(4),
+.cardsSection .cards:nth-child(5),
+.cardsSection .cards:nth-child(6) {
+  display: block;
+}

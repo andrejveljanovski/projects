@@ -1,0 +1,222 @@
+@use "../abstracts/variables" as var;
+
+#artistItemPage {
+  padding-top: 2rem;
+  height: 100vh;
+  background-color: var.$terciary-color;
+  .add-item {
+    height: 120px;
+    width: 100%;
+    background-color: var.$primary-color;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    .add-new-item {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      place-items: center;
+      border: 2px dashed var.$secondary-color;
+      p {
+        margin: 0;
+        color: var.$secondary-color;
+      }
+    }
+  }
+  .card {
+    background-color: var.$primary-color;
+    color: var.$secondary-color;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    margin-bottom: 2rem;
+
+    .card-img {
+      width: 100%;
+      height: 160px;
+      img {
+        width: 100%;
+        height: inherit;
+      }
+    }
+    .card-context {
+      padding: 0 1rem;
+      .fs-med {
+        font-size: var.$font-size-medium;
+        padding-bottom: 0.2rem;
+      }
+      .context-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+
+        div {
+          p {
+            margin: 0;
+          }
+          :nth-child(2) {
+            font-size: var.$font-size-small;
+          }
+        }
+
+        span {
+          background-color: var.$secondary-color;
+          padding: 0.2rem 0.5rem;
+          color: var.$primary-color;
+          border-radius: 2px;
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        }
+      }
+      width: 100%;
+    }
+    .buttonsDivStyle {
+      height: 3rem;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: var.$secondary-color;
+      .auctionBtn {
+        background-color: #1b59ac;
+        color: #f8f8f8;
+      }
+      .publishBtn {
+        color: #5a5a5a;
+      }
+      .unPublishBtn {
+        background-color: #1bac6f;
+        color: #f8f8f8;
+      }
+      .removeBtn {
+        background-color: #d44c2e;
+        color: #fcebd5;
+      }
+      .editBtn {
+        background-color: var.$primary-color;
+        color: var.$secondary-color;
+      }
+      button {
+        height: 50%;
+        padding: 0 1rem;
+        border: none;
+      }
+    }
+  }
+
+  .edit-items {
+    display: none;
+    height: 100vh;
+    background-color: var.$secondary-color;
+    color: var.$terciary-color;
+    padding: 1rem;
+    input,
+    textarea,
+    select {
+      background-color: transparent;
+      border: 1px solid var.$terciary-color;
+      border-radius: 2px;
+      width: 100%;
+      &:focus {
+        outline: 1px solid var.$terciary-color;
+      }
+      margin-bottom: 1rem;
+    }
+    .capturedImage {
+      width: 100%;
+      height: 300px;
+    }
+    .edit-first-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      #editType,
+      #editPrice {
+        width: 11rem;
+      }
+      h2 {
+        margin: 0;
+      }
+      div {
+        #edit-itemIsPublished {
+          width: auto;
+          margin: 0 0 0 10px;
+        }
+      }
+    }
+    p {
+      text-align: center;
+    }
+  }
+  .edit-snapshot {
+    height: 309px;
+    width: 100%;
+    border: 2px dashed var.$terciary-color;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .edit-btns-div {
+    display: flex;
+    justify-content: space-evenly;
+    :nth-child(1) {
+      color: var.$primary-color;
+      background-color: #d44c2e;
+    }
+    :nth-child(2) {
+      color: #5a5a5a;
+      background-color: #e5e5e5;
+    }
+    button {
+      width: 175px;
+      height: 37px;
+      padding: 0 17.5px;
+      font-size: var.$font-size-large;
+      border: none;
+      border-radius: 2px;
+    }
+  }
+  .edit-img-inner {
+    height: 787px;
+    width: 100%;
+    background-color: var.$secondary-color;
+    display: none;
+    .edit-image-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      div {
+        margin-bottom: 1rem;
+      }
+      #edit-liveStream {
+        width: 100%;
+        height: 300px;
+      }
+      #edit-liveCapture {
+        display: none;
+        padding: 0 0.8rem;
+        width: 425px;
+        height: 300px;
+      }
+      #edit-captureImage {
+        background: transparent;
+        border: none;
+        color: var.$terciary-color;
+      }
+      button {
+        margin-bottom: 1rem;
+      }
+      .edit-control-buttons {
+        display: none;
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        align-self: center;
+        button {
+          background: transparent;
+          color: var.$terciary-color;
+          border: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+@use "../abstracts/variables" as var;
+
+#addNewItemPage {
+  height: 100vh;
+  background-color: var.$secondary-color;
+  form {
+    color: var.$terciary-color;
+    #itemIsPublished {
+      width: auto;
+    }
+    input,
+    textarea,
+    select {
+      background-color: transparent;
+      border: 1px solid var.$terciary-color;
+      border-radius: 2px;
+      width: 100%;
+      &:focus {
+        outline: 1px solid var.$terciary-color;
+      }
+      margin-bottom: 1rem;
+    }
+    #addType,
+    #addPrice {
+      width: 11rem;
+    }
+    h2 {
+      margin: 0;
+      color: var.$primary-color;
+    }
+    padding: 1rem;
+    .first-row-form {
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+    }
+    .snapshot {
+      height: 309px;
+      width: 100%;
+      border: 2px dashed var.$terciary-color;
+      display: grid;
+      place-content: center;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .add-btns-div {
+      display: flex;
+      justify-content: space-between;
+      :nth-child(1) {
+        color: var.$primary-color;
+        background-color: #d44c2e;
+      }
+      :nth-child(2) {
+        color: #5a5a5a;
+        background-color: #e5e5e5;
+      }
+      button {
+        width: 175px;
+        height: 37px;
+        padding: 0 17.5px;
+        font-size: var.$font-size-large;
+        border: none;
+        border-radius: 2px;
+      }
+    }
+  }
+  .img-inner {
+    height: 787px;
+    width: 100%;
+    background-color: var.$secondary-color;
+    display: none;
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      div {
+        margin-bottom: 1rem;
+      }
+      #liveCapture {
+        justify-self: center;
+        display: none;
+        padding: 0 0.8rem;
+        width: 425px;
+        height: 300px;
+      }
+      #captureImage {
+        background: transparent;
+        border: none;
+        color: var.$terciary-color;
+      }
+      button {
+        margin-bottom: 1rem;
+      }
+      .control-buttons {
+        display: none;
+        // display: flex;
+        justify-content: space-between;
+        width: 50%;
+        align-self: center;
+        button {
+          background: transparent;
+          color: var.$terciary-color;
+          border: none;
+        }
+      }
+    }
+  }
+}

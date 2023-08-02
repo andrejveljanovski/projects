@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg main-bgc">
+      <div class="container-xl px-5 text-lg-center">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="./img/brainsterlogo.png"
+            class="logo-size me-lg-5"
+            alt="Brainster Academy logo"
+        /></a>
+        <button
+          class="navbar-toggler js-btn border-0 text-dark fs-1 clrchange"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-align-right"></i>
+        </button>
+        <div class="collapse navbar-collapse menuList" id="navbarText">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-around ms-lg-4 me-lg-4 menuList"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link fw-semibold text-dark clrchange"
+                aria-current="page"
+                href="https://brainster.co/marketing/"
+                target="_blank"
+                >Академија за маркетинг</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-semibold text-dark clrchange"
+                href="https://brainster.co/front-end/"
+                target="_blank"
+                >Академија за програмирање</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-semibold text-dark clrchange"
+                href="https://brainster.co/data-science/"
+                target="_blank"
+                >Академија за data science</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-semibold text-dark clrchange"
+                href="https://brainster.co/graphic-design/"
+                target="_blank"
+                >Академија за дизајн</a
+              >
+            </li>
+          </ul>
+          <a
+            href="./vrabotistudent.html"
+            class="btn secondary-bgc btn-sm buttonStyle text-light btn fw-semibold hovBtn ms-lg-5"
+            >Вработи наш студент</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- input form -->
+    <div class="container-fluid darker-ylw frm-h">
+      <div class="row justify-content-center p-sm-5 p-3 mb-lg-5">
+        <div class="col text-center text-dark mt-5 mt-md-0 p-xl-3">
+          <h1 class="fw-bold">Вработи студенти</h1>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-sm-10">
+          <div class="row">
+            <div class="col-lg-6 mb-lg-3">
+              <label for="nameAndSurename" class="fw-semibold">
+                Име и презиме</label
+              >
+              <input
+                id="nameAndSurename"
+                type="text"
+                class="form-control"
+                placeholder="Вашето име и презиме"
+              />
+            </div>
+            <div class="col-lg-6">
+              <label for="companyName" class="fw-semibold">
+                Име на компанија</label
+              >
+              <input
+                id="companyName"
+                type="text"
+                class="form-control"
+                placeholder="Име на вашата компанија"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <div class="row">
+            <div class="col-lg-6 mb-lg-3">
+              <label for="contactEmail" class="fw-semibold">
+                Контакт имејл</label
+              >
+              <input
+                id="contactEmail"
+                type="text"
+                class="form-control"
+                placeholder="Контакт имејл на вашата компанија"
+              />
+            </div>
+            <div class="col-lg-6">
+              <label for="phoneNumber" class="fw-semibold">
+                Контакт телефон</label
+              >
+              <input
+                id="phoneNumber"
+                type="text"
+                class="form-control"
+                placeholder="Контакт телефон на вашата компанија"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <div class="row">
+            <div class="col-lg-6">
+              <label for="inputState" class="form-label fw-semibold mb-0"
+                >Тип на студенти</label
+              >
+              <select
+                id="inputState"
+                class="form-select fw-semibold mb-md-3 mb-lg-0 mb-3 mb-sm-0"
+              >
+                <option selected>Изберете тип на студент</option>
+                <option class="fw-semibold">Студенти од маркетинг</option>
+                <option class="fw-semibold">Студенти од програмирање</option>
+                <option class="fw-semibold">Студенти од data science</option>
+                <option class="fw-semibold">Студенти од дизајн</option>
+              </select>
+            </div>
+            <div class="col-lg-6 d-flex align-items-end">
+              <button
+                type="submit"
+                class="btn secondary-bgc text-light w-100 hovBtn"
+              >
+                Испрати
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid terciary-bgc p-3 footer">
+      <div class="row">
+        <div class="col text-light text-center">
+          Изработено со ❤️ од студентите на Brainster
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/jquery.slim.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/vrabotistudent.js"></script>
+  </body>
+</html>

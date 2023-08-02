@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar1 navbar navbar-expand-lg main-bgc ">
+      <div class="container-xl px-5 text-lg-center">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="./img/brainsterlogo.png"
+            class="logo-size logo-size1 me-lg-5"
+            alt="Brainster Academy logo"
+        /></a>
+        <button
+          class="navbar-toggler js-btn1 border-0 text-dark fs-1 clrchange"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-align-right"></i>
+        </button>
+        <div class="collapse navbar-collapse menuList1" id="navbarText">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-around ms-lg-4 me-lg-4 menuList"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link fw-semibold text-dark clrchange"
+                aria-current="page"
+                href="https://brainster.co/marketing/"
+                target="_blank"
+                >Академија за маркетинг</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-semibold text-dark clrchange"
+                href="https://brainster.co/front-end/"
+                target="_blank"
+                >Академија за програмирање</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-semibold text-dark clrchange"
+                href="https://brainster.co/data-science/"
+                target="_blank"
+                >Академија за data science</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-semibold text-dark clrchange"
+                href="https://brainster.co/graphic-design/"
+                target="_blank"
+                >Академија за дизајн</a
+              >
+            </li>
+          </ul>
+          <a
+            href="./vrabotistudent.html"
+            class="btn secondary-bgc btn-sm buttonStyle text-light btn fw-semibold hovBtn ms-lg-5"
+            >Вработи наш студент</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- bgc section -->
+    <div class="container-fluid bgcSection">
+      <div class="row">
+        <div
+          class="col-12 section-1 d-flex justify-content-center align-items-center text-light"
+        >
+          <h1>Brainster Labs</h1>
+        </div>
+      </div>
+    </div>
+    <!-- filtri -->
+    <div class="container-fluid fltrSection">
+      <div class="row">
+        <div
+          class="col-lg-4 p-4 terciary-bgc d-flex align-items-center justify-content-center filterBgc text-white"
+        >
+          <label
+            for="programmingCards"
+            class="w-100 d-flex justify-content-between align-items-center"
+          >
+            <p class="m-0 h6 cldark">
+              Проекти на студенти по академијата за програмирање
+            </p>
+            <i class="fa-solid fa-circle-check fntawsm"></i>
+            <input type="checkbox" id="programmingCards" />
+          </label>
+        </div>
+        <div
+          class="col-lg-4 p-4 terciary-bgc d-flex align-items-center justify-content-center filterBgc text-white"
+        >
+          <label
+            for="marketingCards"
+            class="w-100 d-flex justify-content-between align-items-center"
+          >
+            <p class="m-0 h6">
+              Проекти на студенти по академијата за маркетинг
+            </p>
+            <i class="fa-solid fa-circle-check fntawsm"></i>
+            <input type="checkbox" id="marketingCards" />
+          </label>
+        </div>
+        <div
+          class="col-lg-4 p-4 terciary-bgc d-flex align-items-center justify-content-center filterBgc text-white"
+        >
+          <label
+            for="designCards"
+            class="w-100 d-flex justify-content-between align-items-center"
+          >
+            <p class="m-0 h6">Проекти на студенти по академијата за дизајн</p>
+            <i class="fa-solid fa-circle-check fntawsm"></i>
+            <input type="checkbox" id="designCards" />
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- karticki -->
+    <div class="container-fluid main-bgc cardSection">
+      <div class="row justify-content-center">
+        <div class="col-6 p-4">
+          <p class="h1 text-dark text-center fw-bold">Проекти</p>
+        </div>
+      </div>
+      <!-- cards section -->
+      <div class="row justify-content-center">
+        <div class="col-xl-10 col-xxl-8">
+          <div class="row cardsSection">
+            <!-- programiranje -->
+            <div class="col-lg-4 col-md-6 mb-3 cards programmingCards">
+              <a
+                href="https://brainster.co/front-end/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/programming.jpg"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за програмирање
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за програмирање
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за програмирање.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/front-end/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- dizajn -->
+            <div class="col-lg-4 col-md-6 mb-3 cards designCards">
+              <a
+                href="https://brainster.co/graphic-design/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/DesignAcademy.jpg"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за дизајн
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за дизајн
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за дизајн.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/graphic-design/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- marketing -->
+            <div class="col-lg-4 col-md-6 mb-3 cards marketingCards">
+              <a
+                href="https://brainster.co/marketing/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/MarketingAcademy.jpg"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за маркетинг
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за маркетинг
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за маркетинг.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/marketing/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- programiranje -->
+            <div class="col-lg-4 col-md-6 mb-3 cards programmingCards">
+              <a
+                href="https://brainster.co/front-end/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/programming2.jpeg"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за програмирање
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за програмирање
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за програмирање.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/front-end/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- marketing -->
+            <div class="col-lg-4 col-md-6 mb-3 cards marketingCards">
+              <a
+                href="https://brainster.co/marketing/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/marketing2.png"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за маркетинг
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за маркетинг
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за маркетинг.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/marketing/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- programiranje -->
+            <div class="col-lg-4 col-md-6 mb-3 cards programmingCards">
+              <a
+                href="https://brainster.co/front-end/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/ProgrammingAcademy.jpg"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за програмирање
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за програмирање
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за програмирање.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/front-end/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- dizajn -->
+            <div class="col-lg-4 col-md-6 mb-3 cards designCards">
+              <a
+                href="https://brainster.co/graphic-design/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/design.jpg"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за дизајн
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за дизајн
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за дизајн.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/graphic-design/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- programiranje -->
+            <div class="col-lg-4 col-md-6 mb-3 cards programmingCards">
+              <a
+                href="https://brainster.co/front-end/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/programming.jpg"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за програмирање
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за програмирање
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за програмирање.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/front-end/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- marketing -->
+            <div class="col-lg-4 col-md-6 mb-3 cards marketingCards">
+              <a
+                href="https://brainster.co/marketing/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/marketing.png"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за маркетинг
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за маркетинг
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за маркетинг.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/marketing/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- programiranje -->
+            <div class="col-lg-4 col-md-6 mb-3 cards programmingCards">
+              <a
+                href="https://brainster.co/front-end/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/programming2.jpeg"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за програмирање
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за програмирање
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за програмирање.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/front-end/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- marketing -->
+            <div class="col-lg-4 col-md-6 mb-3 cards marketingCards">
+              <a
+                href="https://brainster.co/marketing/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/MarketingAcademy.jpg"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за маркетинг
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за маркетинг
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за маркетинг.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/marketing/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- programiranje -->
+            <div class="col-lg-4 col-md-6 mb-3 cards programmingCards">
+              <a
+                href="https://brainster.co/front-end/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/ProgrammingAcademy.jpg"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за програмирање
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за програмирање
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за програмирање.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/front-end/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- dizajn -->
+            <div class="col-lg-4 col-md-6 mb-3 cards designCards">
+              <a
+                href="https://brainster.co/graphic-design/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/DesignAcademy.jpg"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за дизајн
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за дизајн
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за дизајн.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/graphic-design/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- programiranje -->
+            <div class="col-lg-4 col-md-6 mb-3 cards programmingCards">
+              <a
+                href="https://brainster.co/front-end/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/programming.jpg"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за програмирање
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за програмирање
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за програмирање.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/front-end/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- marketing -->
+            <div class="col-lg-4 col-md-6 mb-3 cards marketingCards">
+              <a
+                href="https://brainster.co/marketing/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/marketing2.png"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за маркетинг
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за маркетинг
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за маркетинг.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/marketing/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- programiranje -->
+            <div class="col-lg-4 col-md-6 mb-3 cards programmingCards">
+              <a
+                href="https://brainster.co/front-end/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/programming2.jpeg"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за програмирање
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за програмирање
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за програмирање.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/front-end/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- marketing -->
+            <div class="col-lg-4 col-md-6 mb-3 cards marketingCards">
+              <a
+                href="https://brainster.co/marketing/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/marketing.png"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за маркетинг
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за маркетинг
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за маркетинг.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/marketing/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- programiranje -->
+            <div class="col-lg-4 col-md-6 mb-3 cards programmingCards">
+              <a
+                href="https://brainster.co/front-end/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/ProgrammingAcademy.jpg"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за програмирање
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за програмирање
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за програмирање.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/front-end/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- dizajn -->
+            <div class="col-lg-4 col-md-6 mb-3 cards designCards">
+              <a
+                href="https://brainster.co/graphic-design/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/design.jpg"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за дизајн
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за дизајн
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за дизајн.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/graphic-design/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- programiranje -->
+            <div class="col-lg-4 col-md-6 mb-3 cards programmingCards">
+              <a
+                href="https://brainster.co/front-end/"
+                target="_blank"
+                class="text-decoration-none text-black"
+              >
+                <div class="card h-100 c-hover">
+                  <img
+                    src="./img/programming.jpg"
+                    class="card-img-top prop-img-card"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="main-bgc d-inline-block p-1 fw-semibold">
+                      Академија за програмирање
+                    </p>
+                    <h6 class="card-title">
+                      Проект на студентите од академијата за програмирање
+                    </h6>
+                    <p class="card-text">
+                      Краток опис за проектот, изработен од студентите на
+                      академијата за програмирање.
+                    </p>
+                    <small class="fw-semibold">Април-Октомври 2022</small>
+                  </div>
+                  <div class="d-flex justify-content-end me-3 mb-3 me-3">
+                    <a
+                      href="https://brainster.co/front-end/"
+                      target="_blank"
+                      class="btn secondary-bgc text-light hovBtn"
+                      >Дознај повеќе</a
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 mb-3 d-md-none d-flex justify-content-center align-items-center">
+            <button class="btn btn-danger" id="showMore">Прикажи повеќе</button>
+          </div>
+        </div>
+          <!-- footer -->
+    <div class="container-fluid terciary-bgc p-3">
+      <div class="row justify-content-center">
+        <div class="col text-light text-center">
+          Изработено со ❤️ од студентите на Brainster
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/jquery.slim.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+@use "../abstracts/variables" as var;
+#visitorListing {
+  background-color: var.$terciary-color;
+  nav {
+    background-color: var.$primary-color;
+    // margin-bottom: 2rem;
+  }
+
+  .card {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    margin-bottom: 2rem;
+    padding-bottom: 0.1rem;
+    p {
+      margin-bottom: 0.5rem;
+    }
+    &:nth-child(1) {
+      margin-top: 2rem;
+    }
+    &:nth-child(even) {
+      background-color: var.$secondary-color;
+      p {
+        color: var.$primary-color;
+      }
+      span {
+        background-color: var.$terciary-color;
+        padding: 0.2rem 0.5rem;
+        color: var.$secondary-color;
+        border-radius: 2px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+      }
+    }
+    &:nth-child(odd) {
+      background-color: var.$primary-color;
+      p {
+        color: var.$secondary-color;
+        font-weight: 500;
+      }
+      span {
+        background-color: var.$secondary-color;
+        padding: 0.2rem 0.5rem;
+        color: var.$terciary-color;
+        border-radius: 2px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+      }
+    }
+    .card-img {
+      height: 160px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .card-context {
+      .fs-med {
+        font-size: var.$font-size-medium;
+        margin-bottom: 0.5rem;
+      }
+      .context-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+          font-family: var.$font-family-second;
+          font-size: var.$font-size-big;
+          align-self: center;
+        }
+      }
+
+      width: 100%;
+
+      padding: 0 1rem;
+    }
+  }
+  .filterListing {
+    background: transparent;
+    border: none;
+    background-color: #d44c2e;
+    color: white;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  #filterForm {
+    display: none;
+    padding: 1rem;
+    .first-row-filter {
+      display: flex;
+      justify-content: space-between;
+    }
+    .border-bottom {
+      border-bottom: 1px solid var.$terciary-color;
+      margin-bottom: 1rem;
+      padding: 1.5rem 0;
+    }
+
+    input {
+      width: 6rem;
+    }
+    .price {
+      display: flex;
+      justify-content: space-between;
+    }
+    select {
+      width: 6rem;
+      background-color: transparent;
+      border: 1px solid var.$terciary-color;
+    }
+    label {
+      font-family: var.$font-family-base;
+      font-weight: 300;
+      font-size: var.$font-size-large;
+    }
+    p {
+      font-family: var.$font-family-base;
+      font-weight: 300;
+      font-size: var.$font-size-large;
+    }
+
+    background-color: #a26a5e;
+    height: 90vh;
+    color: var.$terciary-color;
+
+    input {
+      background: transparent;
+      border: 1px solid var.$terciary-color;
+      border-radius: 2px;
+      &:focus {
+        outline: 1px solid var.$terciary-color;
+      }
+    }
+  }
+  #submitFilter {
+    background: transparent;
+    border: none;
+    background-color: #d44c2e;
+    color: white;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    width: 4rem;
+    height: 4rem;
+  }
+}
